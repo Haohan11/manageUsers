@@ -1,0 +1,236 @@
+:root {
+    --unit-height: 2rem;
+    --unit-radius: 3px;
+    --sub-font-size: 1.4rem;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  input:focus ,input:focus-visible {
+     outline: 1px solid slategray;
+  }
+
+input, input::-webkit-inner-spin-button {
+  appearance: none;
+}
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;  
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0 0 5px slategray;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 450px;
+    min-width: 300px;
+    height: 550px;
+    padding: 2rem 2.5rem;
+    color: slategray;
+    user-select: none;
+  }
+  
+  .title {
+    text-align: center;
+  }
+  
+  .input-panel {
+    display: flex;
+    height: 40%;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 5px solid slategray;
+    border-right: 5px solid slategray;
+    padding: 0 1.2rem .2rem 1.2rem;
+    font-size: 1.2rem;
+  }
+
+  .input-panel section {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .select-section {
+    display: flex;
+/*     display: none; */
+  }
+
+  .action-section {
+    display: none;
+  }
+
+  /* #get-section {
+      display: flex;
+  }
+
+  #post-section {
+    display: flex;
+  }
+
+  #put-section {
+    display: flex;
+  }
+
+  #delete-section {
+    display: flex;
+  } */
+
+  .input-panel h2 {
+    display: flex;
+    width: 104%;
+    position: relative;
+    left: -2%;
+    justify-content: space-between;
+    line-height: var(--unit-height);
+    font-size: var(--sub-font-size);
+    font-weight: bold;
+  }
+  
+  .backButton {
+    width: 4rem;
+  }
+
+  .input-panel button {
+    position: relative;
+    border: 0;
+    border-radius: var(--unit-radius);
+    height: var(--unit-height);
+    background-color: transparent;
+    color: slategray;
+    box-shadow: 0 0 0 1px slategray;
+    font-weight: bold;
+    transition: 1s;
+  }
+
+  .input-panel button:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: 50%;
+    border-radius: inherit;
+    background-color: slategray;
+    transition: 1s ease-out,
+                background-color .1s;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+.input-panel h2 button:after {
+  transition: .5s ease-out,
+              background-color .1s;
+}
+  
+  .input-panel button:hover {
+    color: white;
+    box-shadow: none;
+    transition: .1s;
+  }
+  
+  .input-panel button:active {
+    color: slategray;
+    box-shadow: 0 0 0 1px slategray;
+  }
+  
+  .input-panel button:active:after {
+    background-color: transparent;
+  }
+
+  .input-panel button:hover:after {
+    left: 0;
+    width: 100%;
+  }
+
+  @media (max-width: 400px) {
+    .container {
+      padding: 1rem 1.5rem;
+    }
+  }
+
+  .input-panel input[type="text"],
+  .input-panel input[type="number"] {
+    display: inline;
+    height: var(--unit-height);
+    border-radius: var(--unit-radius);
+    border: .5px solid slategray;
+    padding: 0 .5rem;
+    margin: 0 .5rem;
+    font-size: 1rem;
+  }
+
+  .action-section label {
+    width: fit-content;
+    line-height: var(--unit-height);
+  }
+
+  #get-section input[type="number"], 
+  #put-section input[type="number"]:first-child,
+  #delete-section input[type="number"] {
+    width: 3rem;
+    text-align: center;
+  }
+
+  #post-section span, #put-section span {
+    display: inline-block;
+    width: 6rem;
+  }
+
+  #post-section input[type="text"], 
+  #put-section input[type="text"] {
+    width: 90%;
+  }
+
+  #post-section label,
+  #put-section label:not(:first-of-type) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #post-section label:first-of-type input[type="text"] {
+    width: 45%;
+  }
+
+  .output-panel {
+    height: 45%;
+    border: 2px solid slategray;
+    padding: .5rem 1rem;
+    overflow-y: auto;
+  }
+  
+  .output-panel legend {
+    font-size: var(--sub-font-size);
+    font-weight: bold;
+    padding: 0 .5rem;
+  }
+
+  #info-block {
+    user-select: text;
+    font-size: 1.1rem;
+  }
+
+  #info-block div{
+    margin-bottom: .4rem;
+  }
+
+  #info-block h3{
+    display: inline;
+    font-size: 1.1rem;
+  }
+
+  #info-block p{
+    display: inline;
+    margin-left: .2rem;
+    color: darlslategray;
+  }

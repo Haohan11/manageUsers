@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script defer src="manageUsers.js"></script>
+    <title>Manage Users</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Manage Users</h1>
+        <div class="input-panel">
+          <section class="select-section">
+            <h2>Select Action</h2>
+            <button name="get">Get User</button>
+            <button name="post">Create User</button>
+            <button name="put">Update User</button>
+            <button name="delete">Delete User</button>
+          </section>
+          <section class="action-section" id="get-section">
+            <h2>Get User<button class="backButton">BACK</button></h2>
+            <label>Enter user ID :<input type="number" class="idInput"></label>
+            <button id="getAUser">GET A USER</button>
+            <label>Get all users</label>
+            <button id="getAllUsers">GET ALL USERS</button>
+          </section>
+          <section class="action-section" id="post-section">
+            <h2>Create User<button class="backButton">BACK</button></h2>
+            <label><span>User Name:</span><input type="text"/></label>
+            <label><span>Title:</span><input type="text"/></label>
+            <label><span>Body:</span><input type="text"/></label>
+            <button id="postUser">POST</button>
+          </section>
+          <section class="action-section" id="put-section">
+            <h2>Update User<button class="backButton">BACK</button></h2>
+            <label>Enter user ID :<input type="number" class="idInput"></label>
+            <label><span>Title:</span><input type="text"/></label>
+            <label><span>Body:</span><input type="text"/></label>
+            <button id="putUser">PUT</button>
+          </section>
+          <section class="action-section" id="delete-section">
+            <h2>Delete User<button class="backButton">BACK</button></h2>
+            <label>Enter user ID :<input type="number" class="idInput"></label>
+            <button id="deleteUser">DELETE</button>
+          </section>
+        </div>
+        <fieldset class="output-panel">
+          <legend>User Information</legend>
+          <div id="info-block"></div>
+        </fieldset>
+      </div>
+</body>
+</html>
