@@ -63,28 +63,11 @@ input, input::-webkit-inner-spin-button {
 
   .select-section {
     display: flex;
-/*     display: none; */
   }
 
   .action-section {
     display: none;
   }
-
-  /* #get-section {
-      display: flex;
-  }
-
-  #post-section {
-    display: flex;
-  }
-
-  #put-section {
-    display: flex;
-  }
-
-  #delete-section {
-    display: flex;
-  } */
 
   .input-panel h2 {
     display: flex;
@@ -198,10 +181,6 @@ input, input::-webkit-inner-spin-button {
     justify-content: space-between;
   }
 
-  #post-section label:first-of-type input[type="text"] {
-    width: 45%;
-  }
-
   .output-panel {
     height: 45%;
     border: 2px solid slategray;
@@ -215,22 +194,32 @@ input, input::-webkit-inner-spin-button {
     padding: 0 .5rem;
   }
 
-  #info-block {
+  #output-section {
     user-select: text;
+    word-break: break-word;
     font-size: 1.1rem;
   }
-
-  #info-block div{
+  
+  #output-section div {
     margin-bottom: .4rem;
   }
 
-  #info-block h3{
+  #output-section h3 {
     display: inline;
     font-size: 1.1rem;
   }
 
-  #info-block p{
+  #output-section p {
     display: inline;
     margin-left: .2rem;
-    color: darlslategray;
+    color: darkslategray;
+  }
+
+  .info-block {
+    min-width: 100%;
+  }
+
+  .show-border {
+    border-bottom: 1px solid darkslategray;
+    padding: .4rem 0;
   }

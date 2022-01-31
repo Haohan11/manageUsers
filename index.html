@@ -14,41 +14,40 @@
         <div class="input-panel">
           <section class="select-section">
             <h2>Select Action</h2>
-            <button name="get">Get User</button>
-            <button name="post">Create User</button>
-            <button name="put">Update User</button>
-            <button name="delete">Delete User</button>
+            <button class="get">Get User</button>
+            <button class="post">Create User</button>
+            <button class="put">Update User</button>
+            <button class="delete">Delete User</button>
           </section>
           <section class="action-section" id="get-section">
             <h2>Get User<button class="backButton">BACK</button></h2>
             <label>Enter user ID :<input type="number" class="idInput"></label>
-            <button id="getAUser">GET A USER</button>
+            <button class="submitButton">GET A USER</button>
             <label>Get all users</label>
-            <button id="getAllUsers">GET ALL USERS</button>
+            <button class="submitButton">GET ALL USERS</button>
           </section>
           <section class="action-section" id="post-section">
             <h2>Create User<button class="backButton">BACK</button></h2>
-            <label><span>User Name:</span><input type="text"/></label>
             <label><span>Title:</span><input type="text"/></label>
             <label><span>Body:</span><input type="text"/></label>
-            <button id="postUser">POST</button>
+            <button class="submitButton">POST</button>
           </section>
           <section class="action-section" id="put-section">
             <h2>Update User<button class="backButton">BACK</button></h2>
             <label>Enter user ID :<input type="number" class="idInput"></label>
             <label><span>Title:</span><input type="text"/></label>
             <label><span>Body:</span><input type="text"/></label>
-            <button id="putUser">PUT</button>
+            <button class="submitButton">PUT</button>
           </section>
           <section class="action-section" id="delete-section">
             <h2>Delete User<button class="backButton">BACK</button></h2>
             <label>Enter user ID :<input type="number" class="idInput"></label>
-            <button id="deleteUser">DELETE</button>
+            <button class="submitButton">DELETE</button>
           </section>
         </div>
         <fieldset class="output-panel">
           <legend>User Information</legend>
-          <div id="info-block"></div>
+          <div id="output-section"></div>
         </fieldset>
       </div>
 </body>
