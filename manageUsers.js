@@ -6,7 +6,7 @@ const [...actionSections] = document.querySelectorAll(".action-section")
 
 const Section = initSectionClass()
 
-//create and get all section object
+//create all section object
 const sectionObjects = getSectionObjects(actionSections)
 
 //add feature to section object
@@ -214,7 +214,7 @@ const showInformation = (information) => {
     })
 }
 
-const showMessage = (message) => {
+const showMessage = message => {
     outputSection.innerText = message
 }
 
