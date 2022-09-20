@@ -1,2 +1,4 @@
 # manageUsers
 The CRUD by connecting with the mock RESTful API - https://jsonplaceholder.typicode.com
+
+See this repository on CodePen - https://codepen.io/sansuie/pen/eYGeLjo
